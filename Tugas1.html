@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Pendakian Gunung</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+        h2, h3 { color: #2c3e50; }
+        .container { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, button { padding: 10px; margin: 5px; border: none; border-radius: 5px; }
+        input { width: 70%; }
+        .addBtn { background-color: #2e80cc; color: white; cursor: pointer; }
+        .addBtn:hover { background-color: #27ae60; }
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 10px; display: flex; justify-content: space-between; align-items: center; background: #ecf0f1; margin-top: 5px; border-radius: 5px; }
+        .task-status { font-weight: bold; }
+        .completed { color: gray; }
+        .completeBtn { background-color: #0fdaf1; color: black; padding: 5px; border-radius: 5px; cursor: pointer; }
+        .completeBtn:hover { background-color: #d4ac0d; }
+        .deleteBtn { background-color: #3c312f; color: white; padding: 5px; border-radius: 5px; cursor: pointer; }
+        .deleteBtn:hover { background-color: #ca9e99; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>To-Do List Pendakian Gunung 🏔️</h2>
+        <input type="text" id="taskInput" placeholder="Tambahkan item...">
+        <button class="addBtn" onclick="addTask()">Tambah</button>
+        <ul id="taskList"></ul>
+        <h3>Pendakian yang selesai ✅</h3>
+        <ul id="completedTasks"></ul>
+    </div>
+
+    <script src="Tugas1.js"></script>
+</body>
+</html>

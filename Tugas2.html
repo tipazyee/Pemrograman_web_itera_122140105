@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematika</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
+        .container { max-width: 300px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, button { padding: 10px; margin: 5px; border: none; border-radius: 5px; }
+        input { width: 80%; }
+        button { background-color: #3498db; color: white; cursor: pointer; }
+        button:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kalkulator</h2>
+        <input type="number" id="num1" placeholder="Masukkan angka pertama">
+        <input type="number" id="num2" placeholder="Masukkan angka kedua">
+        <br>
+        <button onclick="calculate('add')">Tambah (+)</button>
+        <button onclick="calculate('subtract')">Kurang (-)</button>
+        <button onclick="calculate('multiply')">Perkalian (×)</button>
+        <button onclick="calculate('divide')">Pembagian (÷)</button>
+        <button onclick="calculate('modulus')">Modulus (%)</button>
+        <button onclick="calculate('power')">Pangkat (^)</button>
+        <button onclick="calculate('sqrt')">Akar (√)</button>
+        <h3>Hasil: <span id="result">0</span></h3>
+    </div>
+
+    <script src = "Tugas2.js"></script>
+</body>
+</html>
